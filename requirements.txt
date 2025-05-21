@@ -1,0 +1,21 @@
+1) Tech Stack used:
+opencv-python
+mediapipe
+PyQt5
+numpy
+2) File Heirarchy:
+KuchipudiMudraAnalyzer/
+├── Kuchipudi_hand_gestures.py           # Main app file (GUI + logic)
+├── mudra_data/
+│   ├── mudras.json                      # All single & double hand mudras and their meanings
+├── utils/
+│   └── mudra_utils.py                   # Helper: matching, loading, distance checks
+├── models/
+│   └── (Optional) classifier.pkl        # If using ML model later
+├── requirements.txt
+└── README.md
+Prefer pure Python or pure Python + light C extension libraries updated for 3.13
+For GUI, try PySide6
+For images, use Pillow and scikit-image
+For video, imageio + imageio-ffmpeg
+For ML models, try frameworks with latest Python wheels, e.g., PyTorch nightly builds or ONNX Runtime
